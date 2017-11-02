@@ -8,5 +8,7 @@ data helper
 * [ ] 扁平化
 * [ ] 序列化
 * [ ] key匹配 / 数组匹配 / 结构匹配
-* [ ] deepGet
+* [ ] deep get
 * [ ] 重复 key 处理
+* [ ] deep copy
+* [ ] 容错处理
