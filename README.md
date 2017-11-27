@@ -29,4 +29,7 @@ data helper
 
 #### deepGet
 
+[DEMO]()
 #### batchDeepGet
+
+[DEMO]()

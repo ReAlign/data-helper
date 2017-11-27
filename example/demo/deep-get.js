@@ -1,34 +1,21 @@
-let _t = {};
-
-require('./../../src/lib/base/typeof')(_t);
-
 const _ = require('./../../src/index');
 
 const MOCK = require('./../mock/m.index');
 
-// let result1 = '';
-// let result2 = '';
+// no deepClone
+let result1 = _.deepGet(MOCK.obj1, 'work.member[0]', [], {deepClone: false});
+console.log('work.member[0]: %o', result1);
+// reset name
+result1.name = 'pp';
 
-// for (let kk = 0; kk < 2; kk++) {
-//     result = _.deepGet(MOCK.obj1, `work.member[${kk}].name`, 'null');
-//     console.log(result);
-// }
+let result2 = _.deepGet(MOCK.obj1, 'work["member"][0]', []);
+console.log('work.member[0]: %o', result2);
 
-// let cache = _.deepClone(MOCK.obj1.work);
-
-// cache.name = 'alj';
-
-// console.log(MOCK.obj1.work);
-
-// console.log(_.deepClone(MOCK.obj1.work));
-
-let result1 = _.deepGet(MOCK.obj1, 'work.member', [], {deepClone: false});
-// console.log(_t.typeOf(result1));
-console.log(result1);
-// result1[0].name = 'pp';
-let k = 'member';
-let result2 = _.deepGet(MOCK.obj1, 'work["member"]', []);
-console.log(result2);
-
+// deepClone
 let result3 = _.deepGet(MOCK.obj1, ['work', 'member', '1'], []);
-console.log(result3);
+console.log('work.member[1]: %o', result3);
+// reset name
+result3.name = 'pp';
+
+let result4 = _.deepGet(MOCK.obj1, ['work', 'member', '1'], []);
+console.log('work.member[1]: %o', result4);
