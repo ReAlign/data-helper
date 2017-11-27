@@ -29,7 +29,7 @@ data helper
 
 #### deepGet
 
-[DEMO]()
+[DEMO](https://github.com/ReAlign/data-helper/blob/master/example/demo/deep-get.js)
 #### batchDeepGet
 
 [DEMO]()
