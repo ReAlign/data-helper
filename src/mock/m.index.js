@@ -15,7 +15,8 @@ let Mock = {
                     name: 'p2',
                     age: 2
                 }
-            ]
+            ],
+            member2: null
         }
     }
 };
