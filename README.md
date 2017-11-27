@@ -32,4 +32,4 @@ data helper
 [DEMO](https://github.com/ReAlign/data-helper/blob/master/example/demo/deep-get.js)
 #### batchDeepGet
 
-[DEMO]()
+[DEMO](https://github.com/ReAlign/data-helper/blob/master/example/demo/deep-get.js)
