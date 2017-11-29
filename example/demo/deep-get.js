@@ -19,3 +19,9 @@ result3.name = 'pp';
 
 let result4 = _.deepGet(MOCK.obj1, ['work', 'member', '1'], []);
 console.log('work.member[1]: %o', result4);
+
+let result5 = _.deepGet(MOCK.obj1, 'work.k.v', '');
+console.log('work.k.v: %o', result5);
+
+let result6 = _.deepGet(MOCK.obj1, 'work["k.v"]', '');
+console.log('work["k.v"]: %o', result6);

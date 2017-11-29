@@ -16,7 +16,11 @@ let Mock = {
                     age: 2
                 }
             ],
-            member2: null
+            member2: null,
+            k: {
+                v: '43434334434334'
+            },
+            'k.v': '122222'
         }
     }
 };
